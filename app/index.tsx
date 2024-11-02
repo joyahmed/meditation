@@ -12,7 +12,7 @@ const App = () => {
 	return (
 		<View className='flex-1'>
 			<ImageBackground
-				source={require('@/assets/meditation-images/beach.webp')}
+				source={require('@/assets/meditation-images/meditation-bg.webp')}
 				resizeMode='cover'
 				className='flex-1'
 			>
@@ -25,10 +25,10 @@ const App = () => {
 						className='flex-1 justify-between mx-5 my-12'
 					>
 						<View>
-							<Text className='text-center text-white font-bold text-4xl'>
+							<Text className='text-center text-white font-bold text-4xl uppercase'>
 								Meditation
 							</Text>
-							<Text className='text-center text-white text-2xl mt-3'>
+							<Text className='text-center text-white text-lg mt-3 uppercase'>
 								Simplyfying Meditation for everyone
 							</Text>
 						</View>

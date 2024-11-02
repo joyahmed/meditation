@@ -21,7 +21,7 @@ const CustomButton = ({
 			onPress={onPress}
 		>
 			<Text
-				className={`font-semibold text-lg text-white ${textStyles}`}
+				className={`font-semibold text-lg text-white tracking-wider uppercase ${textStyles}`}
 			>
 				{title}
 			</Text>
