@@ -7,7 +7,7 @@ const Content = ({ children }: any) => {
 	return (
 		<View
 			style={{ paddingTop: ios ? top : top + 10 }}
-			className='flex-1'
+			className='flex-1 px-4'
 		>
 			{children}
 		</View>

@@ -1,4 +1,4 @@
-import beachImage from '@/assets/meditation-images/beach.webp';
+import beachImage from '@/assets/meditation-images/meditation-bg.webp';
 import meditatingUnderTree from '@/assets/meditation-images/meditate-under-tree.webp';
 import riverImage from '@/assets/meditation-images/river.webp';
 import treeImage from '@/assets/meditation-images/trees.webp';

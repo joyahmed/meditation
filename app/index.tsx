@@ -4,6 +4,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { ImageBackground, Platform, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import meditationBg from '@/assets/meditation-images/meditation-bg.webp'
 
 const ios = Platform.OS == 'ios';
 
@@ -13,7 +14,7 @@ const App = () => {
 	return (
 		<View className='flex-1'>
 			<ImageBackground
-				source={require('@/assets/meditation-images/meditation-bg.webp')}
+				source={meditationBg}
 				resizeMode='cover'
 				className='flex-1'
 			>
