@@ -1,5 +1,5 @@
+import AppGradient from '@/components/app-gradient';
 import CustomButton from '@/components/custom-button';
-import { LinearGradient } from 'expo-linear-gradient';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { ImageBackground, Platform, Text, View } from 'react-native';
@@ -9,6 +9,7 @@ const ios = Platform.OS == 'ios';
 
 const App = () => {
 	const { top } = useSafeAreaInsets();
+
 	return (
 		<View className='flex-1'>
 			<ImageBackground
@@ -16,8 +17,7 @@ const App = () => {
 				resizeMode='cover'
 				className='flex-1'
 			>
-				<LinearGradient
-					className='flex-1'
+				<AppGradient
 					colors={['rgba(0, 0, 0, 0.4)', 'rgba(0, 0, 0, 0.8)']}
 				>
 					<View
@@ -35,15 +35,15 @@ const App = () => {
 						<View>
 							<CustomButton
 								{...{
-									onPress: () => console.log('pressed'),
-									title: 'Get Started'
+									title: 'Get Started',
+									link: '/(tabs)/nature-meditatation'
 								}}
 							/>
 						</View>
 
 						<StatusBar style='light' />
 					</View>
-				</LinearGradient>
+				</AppGradient>
 			</ImageBackground>
 		</View>
 	);
