@@ -2,6 +2,7 @@ import AppGradient from '@/components/app-gradient';
 import { MEDITATION_DATA } from '@/constants/meditation-data';
 import MEDITATION_IMAGES from '@/constants/meditation-images';
 import { LinearGradient } from 'expo-linear-gradient';
+import { useRouter } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import {
@@ -13,6 +14,7 @@ import {
 } from 'react-native';
 
 const NatureMeditation = () => {
+	const router = useRouter();
 	return (
 		<View className='flex-1'>
 			<AppGradient colors={['#161B2E', '#0A4D4A', '#766E67']}>
@@ -32,7 +34,7 @@ const NatureMeditation = () => {
 						showsVerticalScrollIndicator={false}
 						renderItem={({ item }) => (
 							<Pressable
-								onPress={() => console.log('press')}
+								onPress={() => router.push(`/meditate/${item.id}`)}
 								className='h-48 my-3 rounded-md overflow-hidden'
 							>
 								<ImageBackground

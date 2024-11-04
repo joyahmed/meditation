@@ -1,6 +1,7 @@
 import meditationBg from '@/assets/meditation-images/meditation-bg.webp';
 import AppGradient from '@/components/app-gradient';
 import CustomButton from '@/components/custom-button';
+import { router } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { ImageBackground, Platform, Text, View } from 'react-native';
@@ -37,15 +38,15 @@ const App = () => {
 							<CustomButton
 								{...{
 									title: 'Get Started',
-									link: '/nature-meditation'
+									onClick: () => router.push('/nature-meditation')
 								}}
 							/>
 						</View>
-
-						<StatusBar style='light' />
 					</View>
 				</AppGradient>
 			</ImageBackground>
+
+			<StatusBar style='light' />
 		</View>
 	);
 };

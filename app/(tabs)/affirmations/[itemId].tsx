@@ -1,11 +1,10 @@
 import AppGradient from '@/components/app-gradient';
+import BackButton from '@/components/back-button';
 import AFFIRMATION_GALLERY from '@/constants/affirmations-gallery';
-import { AntDesign } from '@expo/vector-icons';
-import { useLocalSearchParams, useRouter } from 'expo-router';
+import { useLocalSearchParams } from 'expo-router';
 import React, { useEffect, useState } from 'react';
 import {
 	ImageBackground,
-	Pressable,
 	ScrollView,
 	Text,
 	View
@@ -15,7 +14,6 @@ const AffirmationPractice = () => {
 	const { itemId } = useLocalSearchParams();
 	const [affirmation, setAffirmation] =
 		useState<GalleryPreviewData>();
-	const router = useRouter();
 
 	useEffect(() => {
 		for (let idx = 0; idx < AFFIRMATION_GALLERY.length; idx++) {
@@ -45,12 +43,7 @@ const AffirmationPractice = () => {
 				className='flex-1'
 			>
 				<AppGradient colors={['rgba(0,0,0,0.3)', 'rgba(0,0,0,0.9)']}>
-					<Pressable
-						onPress={() => router.back()}
-						className='absolute top-16 left-6 z-10'
-					>
-						<AntDesign name='leftcircle' size={30} color='white' />
-					</Pressable>
+				<BackButton />
 					<ScrollView showsVerticalScrollIndicator={false}>
 						<View className='flex-1 h-fit items-center justify-center my-auto mt-28'>
 							<Text className='text-white text-3xl font-bold text-center whitespace-pre-line'>
