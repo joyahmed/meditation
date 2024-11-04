@@ -12,7 +12,7 @@ import {
 	View
 } from 'react-native';
 
-const NatureMeditate = () => {
+const NatureMeditation = () => {
 	return (
 		<View className='flex-1'>
 			<AppGradient colors={['#161B2E', '#0A4D4A', '#766E67']}>
@@ -59,4 +59,4 @@ const NatureMeditate = () => {
 	);
 };
 
-export default NatureMeditate;
+export default NatureMeditation;

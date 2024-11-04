@@ -1,10 +1,10 @@
+import meditationBg from '@/assets/meditation-images/meditation-bg.webp';
 import AppGradient from '@/components/app-gradient';
 import CustomButton from '@/components/custom-button';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { ImageBackground, Platform, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import meditationBg from '@/assets/meditation-images/meditation-bg.webp'
 
 const ios = Platform.OS == 'ios';
 
@@ -37,7 +37,7 @@ const App = () => {
 							<CustomButton
 								{...{
 									title: 'Get Started',
-									link: '/(tabs)/nature-meditatation'
+									link: '/nature-meditation'
 								}}
 							/>
 						</View>

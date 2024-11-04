@@ -1,6 +1,6 @@
 import { useSafeArea } from '@/hooks/useSafeArea';
 import React from 'react';
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
 
 const Content = ({ children }: any) => {
 	const { ios, top } = useSafeArea();
