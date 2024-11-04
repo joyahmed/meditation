@@ -9,9 +9,9 @@
 		"userInterfaceStyle": "automatic",
 		"assetBundlePatterns": ["**/*"],
 		"splash": {
-			"image": "./assets/simpleMeditationLogo.png",
-			"resizeMode": "contain",
-			"backgroundColor": "#ffffff"
+			"image": "./assets/meditationLogo.png",
+			"resizeMode": "cover",
+			"backgroundColor": "#000"
 		},
 		"ios": {
 			"supportsTablet": true
